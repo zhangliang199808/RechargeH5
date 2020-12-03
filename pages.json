@@ -1,0 +1,53 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+		    "path" : "pages/allRecords/allRecords",
+		    "style" : {
+		    	"navigationStyle":"custom"
+		    }
+		},
+		{
+		    "path" : "pages/ucenter/ucenter",
+		    "style" : {
+		    	"navigationStyle":"custom"
+		    }
+		}
+	],
+	"tabBar": {
+		"color" : "#b5b7b8",
+		"selectedColor" : "#FF3B2C",
+		"borderStyle" : "black",
+		"backgroundColor" : "#ffffff",
+		"list" : [
+		    {
+		        "pagePath" : "pages/index/index",
+		        "iconPath" : "static/logo.png",
+		        "selectedIconPath" : "static/logo.png",
+		        "text" : "首页"
+		    },
+		    {
+		        "pagePath" : "pages/allRecords/allRecords",
+		        "iconPath" : "static/logo.png",
+		        "selectedIconPath" : "static/logo.png",
+		        "text" : "全部记录"
+		    },
+		    {
+		        "pagePath" : "pages/ucenter/ucenter",
+		        "iconPath" : "static/logo.png",
+		        "selectedIconPath" : "static/logo.png",
+		        "text" : "个人中心"
+		    }
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	}
+}
