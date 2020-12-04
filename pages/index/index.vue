@@ -11,7 +11,7 @@
 			<text class="title">{{title}}</text>
 		</view> -->
 		<view class="toplist">
-			<view class="list" v-for="(item,index) in topList" :key="index">
+			<view class="list" @click="listtpye(index)" v-for="(item,index) in topList" :key="index">
 				<image src="" mode="" style="display:block;width:90rpx;height:90rpx;background:#ccc;margin:0 auto"></image>
 				<view class="listtext">
 					{{item.name}}
@@ -50,19 +50,31 @@
 					},
 				], //轮播图
 				topList: [{
-					name:'供热缴费',
-				},
-				{
-					name:"水电燃气"
-				},
-		{name:"投诉报修"},
-		{name:"卡号管理"},
-		{name:"电子发票"},
-		{name:"快票儿"},
-		{name:"网点地图"},
-		{name:"业务办理"},
-		// {name:"电子发票"},
-		// {name:"电子发票"},
+						name: '供热缴费',
+					},
+					{
+						name: "水电燃气"
+					},
+					{
+						name: "投诉报修"
+					},
+					{
+						name: "卡号管理"
+					},
+					{
+						name: "电子发票"
+					},
+					{
+						name: "收费标准"
+					},
+					{
+						name: "网点地图"
+					},
+					{
+						name: "业务办理"
+					},
+					// {name:"电子发票"},
+					// {name:"电子发票"},
 				],
 			}
 		},
@@ -70,7 +82,12 @@
 
 		},
 		methods: {
-
+			//点击列表跳转页面
+		listtpye(id){
+			uni.navigateTo({
+			    url: 'test?id='+index
+			});
+		},
 		}
 	}
 </script>
@@ -101,17 +118,20 @@
 		font-size: 36rpx;
 		color: #8f8f94;
 	}
-	.toplist{
-		display:flex;
-		flex-wrap:wrap
+
+	.toplist {
+		display: flex;
+		flex-wrap: wrap
 	}
-	.list{
-		width:25%;
-		margin:20rpx 0
+
+	.list {
+		width: 25%;
+		margin: 20rpx 0
 	}
-	.listtext{
-		text-align:center;
-		font-size:20rpx;
-		margin-top:10rpx
+
+	.listtext {
+		text-align: center;
+		font-size: 20rpx;
+		margin-top: 10rpx
 	}
 </style>

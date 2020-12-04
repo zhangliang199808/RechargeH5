@@ -1,17 +1,20 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		//首页
 		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationStyle":"custom"
 			}
 		},
+		// 业务记录
 		{
 		    "path" : "pages/allRecords/allRecords",
 		    "style" : {
 		    	"navigationStyle":"custom"
 		    }
 		},
+		// 个人中心
 		{
 		    "path" : "pages/ucenter/ucenter",
 		    "style" : {
@@ -35,12 +38,13 @@
 		        "pagePath" : "pages/allRecords/allRecords",
 		        "iconPath" : "static/logo.png",
 		        "selectedIconPath" : "static/logo.png",
-		        "text" : "全部记录"
+		        "text" : "业务记录"
 		    },
 		    {
 		        "pagePath" : "pages/ucenter/ucenter",
 		        "iconPath" : "static/logo.png",
 		        "selectedIconPath" : "static/logo.png",
+				"backgroundColor":"#ccc",
 		        "text" : "个人中心"
 		    }
 		]
