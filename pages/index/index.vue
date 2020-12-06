@@ -111,7 +111,7 @@
 			    url: '/pages/heating/heating'
 			});}
 			if(id==7){uni.navigateTo({
-			    url: '/pages/heating/heating'
+			    url: '/pages/ywbl/ywbl'
 			});}
 			console.log(12)
 			// uni.navigateTo({

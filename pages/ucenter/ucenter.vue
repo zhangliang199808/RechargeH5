@@ -27,7 +27,7 @@
         </div> -->
       </div>
 	  <view class="toplist">
-	  	<view class="list" v-for="(item,index) in topList" :key="index">
+	  	<view @click="listtpye(index)" class="list" v-for="(item,index) in topList" :key="index">
 	  		<image src="" mode="" style="display:block;width:90rpx;height:90rpx;background:#ccc;margin:0 auto"></image>
 	  		<view class="listtext">
 	  			{{item.name}}
@@ -397,7 +397,38 @@ export default {
           console.log(err);
         }
       });
-    }
+    },
+	listtpye(id){
+		console.log(id)
+		if(id==0){uni.navigateTo({
+		    url: '/pages/shdz/shdz'
+		});}
+		if(id==1){uni.navigateTo({
+		    url: '/pages/liuYan/liuYan'
+		});}
+		if(id==2){uni.navigateTo({
+		    url: '/pages/repair/repair'
+		});}
+		if(id==3){uni.navigateTo({
+		    url: '/pages/youhuij/youhuij'
+		});}
+		if(id==4){uni.navigateTo({
+		    url: '/pages/ddjl/ddjl'
+		});}
+		// if(id==5){uni.navigateTo({
+		//     url: '/pages/heating/heating'
+		// });}
+		// if(id==6){uni.navigateTo({
+		//     url: '/pages/heating/heating'
+		// });}
+		// if(id==7){uni.navigateTo({
+		//     url: '/pages/ywbl/ywbl'
+		// });}
+		console.log(12)
+		// uni.navigateTo({
+		//     url: '/pages/heating/heating'
+		// });
+	},
   }
 };
 </script>

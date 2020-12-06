@@ -10,7 +10,22 @@
 				<div data-v-6416d0a4="" class="weui-cell__ft"></div>
 			</li>
 		</ul>
-	
+	<view class="toplist">
+		<view class="list" @click="listtpye(index)" v-for="(item,index) in topList" :key="index">
+			<image src="" mode="" style="display:block;width:90rpx;height:90rpx;background:#ccc;margin:0 auto"></image>
+			<view class="listtext">
+				{{item.name}}
+			</view>
+		</view>
+	</view>
+	<view class="problem">
+		<view class="problemtitle">
+			常见问题
+		</view>
+		<view class="problemlist">
+			暂无问题
+		</view>
+	</view>
 	</view>
 </template>
 
@@ -38,7 +53,33 @@
 						// name: '4',
 						imgUrl: 'https://pic1.zhimg.com/80/v2-33e85bdfafbb4aa52ce6f70f319dbb4f_720w.jpg',
 					},
-				], 
+				], topList: [{
+						name: '投诉报修',
+					},
+					{
+						name: "诉求记录"
+					},
+					{
+						name: "维修站点"
+					},
+					// {
+					// 	name: "卡号管理"
+					// },
+					// {
+					// 	name: "电子发票"
+					// },
+					// {
+					// 	name: "收费标准"
+					// },
+					// {
+					// 	name: "网点地图"
+					// },
+					// {
+					// 	name: "业务办理"
+					// },
+					// {name:"电子发票"},
+					// {name:"电子发票"},
+				],
 			}
 		},
 		methods: {
@@ -104,4 +145,35 @@ page {
 		padding-right: 13px;
 		position: relative;
 	}
+	.toplist {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		background: #Fff;
+		margin-top: 20rpx;
+	}
+	
+	.list {
+		width: 31%;
+		margin: 20rpx 0
+	}
+	
+	.listtext {
+		text-align: center;
+		font-size: 20rpx;
+		margin-top: 10rpx
+	}
+	.problem{
+		background: #fff;
+		margin-top: 20rpx;
+	}
+.problemtitle{
+	padding:20rpx;
+	border-bottom: 1rpx #ccc solid;
+}
+.problemlist{
+	padding:30rpx;
+	text-align: center;
+	
+}
 </style>
