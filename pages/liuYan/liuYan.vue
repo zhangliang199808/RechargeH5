@@ -11,7 +11,31 @@
 		</view>
 		<!-- 列表 暂时内容未知 -->
 		<view v-if="showList" class="list">
+			<view class="card" v-for="(item,index) in message" :key="index">
+				<view class="cardtop">
 
+					<view class="" style="word-break:break-all;">
+
+						{{item.title}} </view>
+				</view>
+				<view class="cardbottom">
+
+					<view class="" style="word-break:break-all;">
+
+						{{item.content}} </view>
+				</view>
+				<view class="cardfoot flex-row " style="justify-content: flex-end;">
+				
+					<view class="flex-row">
+						<view <!-- class="" @click="edit(item.id)" style="margin-right: 20rpx;">
+							编辑
+						</view> -->
+						<view class="">
+							删除
+						</view>
+					</view>
+				</view>
+			</view>
 		</view>
 		<button type="primary" @click="addadress" style="width: 80%;margin-top: 40rpx;border-radius:50px">+新建留言</button>
 	</view>
@@ -22,7 +46,12 @@
 	export default {
 		data() {
 			return {
-				showList: false
+				showList: false,
+				message: [{
+					id: 1,
+					title: 'firsttitle',
+					content: 'firstcontenr'
+				}]
 			}
 		},
 		methods: {
@@ -91,5 +120,23 @@
 	.weui-cell_access .weui-cell__ft {
 		padding-right: 13px;
 		position: relative;
+	}
+
+	.card {
+		background: #fff;
+		padding: 10rpx 25rpx;
+		margin-bottom: 20rpx;
+	}
+
+	.cardtop {
+		border-bottom: 1rpx #ccc solid;
+		padding: 10rpx 0;
+	}
+
+	.cardbottom {
+		margin: 30rpx 0;
+	}
+	.cardfoot{
+		padding: 10rpx 25rpx;
 	}
 </style>
