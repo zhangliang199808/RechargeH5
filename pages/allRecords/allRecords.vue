@@ -1,6 +1,9 @@
 <template>
 	<view>
-		<div data-v-6416d0a4="" class="banner"><img data-v-6416d0a4="" src="../../static/img/banner-other.png" style="width:100%"></div>
+<!-- <div style="height:250rpx"> -->
+<!-- <image data-v-6416d0a4="" mode="aspectFit" src="../../static/img/banner-other.png" style="width:100%;height: 100%;"/> -->
+<img data-v-6416d0a4="" mode="aspectFit" src="../../static/img/banner-other.png" style="width:100%;"/>
+<!-- </div> -->
 
 		<ul data-v-6416d0a4="" class="weui-cells appeal-links" style="margin-top: 6px;">
 			<!---->
@@ -73,7 +76,7 @@
 		border-top:1rpx solid #d9d9d9;
 		border-bottom:1rpx solid #d9d9d9;
 		justify-content: space-between;transform-origin: 0 100%;
-		transform: scaleY(.5);   transform-origin: 0 0;
+		 transform-origin: 0 0;
 	}
 .weui-cell{
 	font-family: Microsoft YaHei;

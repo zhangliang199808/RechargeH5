@@ -4,24 +4,64 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationStyle":"custom"
+				// "navigationStyle":"custom"
 			}
 		},
 		// 业务记录
 		{
 		    "path" : "pages/allRecords/allRecords",
 		    "style" : {
-		    	"navigationStyle":"custom"
+		    	// "navigationStyle":"custom"
 		    }
 		},
 		// 个人中心
 		{
 		    "path" : "pages/ucenter/ucenter",
 		    "style" : {
-		    	"navigationStyle":"custom"
+		    	// "navigationStyle":"custom"
 		    }
-		}
-	],
+		},
+		// 供热缴费
+	    {
+            "path" : "pages/heating/heating",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		// 添加缴费卡
+		{
+            "path" : "pages/heating/addcard/addcard",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,
+		// 水电燃气
+		{
+            "path" : "pages/gas/gas",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/repair/repair",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"tabBar": {
 		"color" : "#b5b7b8",
 		"selectedColor" : "#FF3B2C",
@@ -53,5 +93,17 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#FFFFFF"
+		
+		
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "pages/index/index", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
 	}
 }

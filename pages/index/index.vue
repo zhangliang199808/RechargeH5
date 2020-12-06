@@ -1,7 +1,11 @@
 <template>
 	<view class="content">
+		<!-- <view data-v-d8da5c7c="" class="banner" style="width: 100%;"> -->
+			<img  mode="aspectFit" src="../../static/img/homebanner.jpg" style="width: 100%;height: 100%;"> 
+			<!---->
+			<!-- </view> -->
 		<!-- <container style="width:100%"> -->
-		<ls-swiper :list="base_lsit" imgKey="imgUrl" :loop="true" :dots='true' :autoplay='true' style="width:100%" @clickItem="clickItem()" />
+		<!-- <ls-swiper :list="base_lsit" imgKey="imgUrl" :loop="true" :dots='true' :autoplay='true' style="width:100%" @clickItem="clickItem()" /> -->
 		<!-- </container> -->
 		<!-- <textscroll :list="list"/> -->
 		<uni-notice-bar showIcon="true" scrollable="true" text="[多行] 这是 NoticeBar 通告栏，这是 NoticeBar 通告栏，这是 NoticeBar 通告栏这是 NoticeBar 通告栏，这是 NoticeBar 通告栏，这是 NoticeBar 通告栏"></uni-notice-bar>
@@ -84,9 +88,35 @@
 		methods: {
 			//点击列表跳转页面
 		listtpye(id){
-			uni.navigateTo({
-			    url: 'test?id='+index
-			});
+			console.log(id)
+			if(id==0){uni.navigateTo({
+			    url: '/pages/heating/heating'
+			});}
+			if(id==1){uni.navigateTo({
+			    url: '/pages/gas/gas'
+			});}
+			if(id==2){uni.navigateTo({
+			    url: '/pages/repair/repair'
+			});}
+			if(id==3){uni.navigateTo({
+			    url: '/pages/heating/heating'
+			});}
+			if(id==4){uni.navigateTo({
+			    url: '/pages/heating/heating'
+			});}
+			if(id==5){uni.navigateTo({
+			    url: '/pages/heating/heating'
+			});}
+			if(id==6){uni.navigateTo({
+			    url: '/pages/heating/heating'
+			});}
+			if(id==7){uni.navigateTo({
+			    url: '/pages/heating/heating'
+			});}
+			console.log(12)
+			// uni.navigateTo({
+			//     url: '/pages/heating/heating'
+			// });
 		},
 		}
 	}
