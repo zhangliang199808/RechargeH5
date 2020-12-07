@@ -133,6 +133,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/dzfp/dzfp",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"tabBar": {
 		"color" : "#b5b7b8",

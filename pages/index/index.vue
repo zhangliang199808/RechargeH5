@@ -102,7 +102,7 @@
 			    url: '/pages/heating/heating'
 			});}
 			if(id==4){uni.navigateTo({
-			    url: '/pages/heating/heating'
+			    url: '/pages/dzfp/dzfp'
 			});}
 			if(id==5){uni.navigateTo({
 			    url: '/pages/heating/heating'
